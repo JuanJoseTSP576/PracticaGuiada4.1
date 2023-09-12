@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="48dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="@string/tvTitle"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    <!-- 1. Version Android -->
+    <TextView
+
+        android:id="@+id/tvVersionAndroidLB"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12sp"
+        android:layout_height="wrap_content"
+        android:text="@string/tvVersionAndroidLB" />
+
+    <TextView
+        android:id="@+id/tvVersionAndroid"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="12sp"
+        android:layout_height="wrap_content" />
+
+    <!-- 2. FlashLight -->
+    <TextView
+        android:id="@+id/tvLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/tvLigth" />
+
+    <TextView
+        android:id="@+id/tvFlashLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnOff"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="@string/btn0ff"
+            android:textColor="#5E35B1" />
+
+        <Button
+            android:id="@+id/btnOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:text="@string/btnOn"
+            android:textColor="#5E35B1"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </TableRow>
+
+    <!-- 3. Level of Battery -->
+    <TextView
+        android:id="@+id/tvLevelBatteryLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:text="@string/tvLevelBaterry" />
+
+
+    <!-- 4. Storage -->
+    <ProgressBar
+        android:id="@+id/pbLevelBattery"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvStorageLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/tvStorage" />
+
+        <EditText
+            android:id="@+id/etNameFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/etNameFile"
+            android:minHeight="48dp"
+            android:textColorHint="#8D6E63"
+             />
+
+        <!-- 5. Connection -->
+
+        <ImageButton
+            android:id="@+id/btnSaveFile"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:contentDescription="@string/btnSaveFile"
+            android:src="@android:drawable/ic_menu_upload"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+        android:id="@+id/tvConectionLB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginBottom="12sp"
+        android:text="@string/tvState" />
+
+        <TextView
+            android:id="@+id/tvConexion"
+            android:layout_width="355dp"
+            android:layout_height="39dp" />
+
+        <TextView
+            android:id="@+id/tvBluetooth"
+            android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12sp"
+            android:text="@string/tvBluetooth"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnOffBluetooth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:textColor="#5E35B1"
+                android:text="@string/btn0ff" />
+
+            <Button
+                android:id="@+id/btnOnBluetooth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:textColor="#5E35B1"
+                android:text="@string/btnOn" />
+
+        </TableRow>
+    </LinearLayout>
+</ScrollView>

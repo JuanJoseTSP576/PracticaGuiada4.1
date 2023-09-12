@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PracticaGuiada4.1</string>
+    <string name="tvVersionAndroidLB">1. Versión del Android y SDK:</string>
+    <string name="tvVersionAndroid"></string>
+    <string name="tvLigth">2. Linterna :</string>
+    <string name="btnOn">Encendido</string>
+    <string name="btn0ff">Apagado</string>
+    <string name="tvLevelBaterry">3. Nivel de batería: </string>
+    <string name="tvLevelBaterry_2"></string>
+    <string name="tvStorage">4. Almacenamiento</string>
+    <string name="etNameFile">Nombre del archivo</string>
+    <string name="btnSaveFile">Guardar</string>
+    <string name="tvState">5. Conexión internet:</string>
+    <string name="tvTitle">Recursos del dispositivo</string>
+    <string name="tvBluetooth">6. Bluetooth:</string>
+</resources>
